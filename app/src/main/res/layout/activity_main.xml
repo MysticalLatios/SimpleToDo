@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="17dp"
+        android:onClick="onAddItem"
+        android:text="Add" />
+
+    <ListView
+        android:id="@+id/Lvitems"
+        android:layout_width="match_parent"
+        android:layout_height="524dp"
+        android:layout_above="@+id/BTN"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="0dp" />
+
+    <EditText
+        android:id="@+id/etNewItem"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toStartOf="@+id/BTN"
+        android:layout_toLeftOf="@+id/BTN"
+        android:ems="10"
+        android:hint="Add a new item"
+        android:inputType="textPersonName" />
+</RelativeLayout>
